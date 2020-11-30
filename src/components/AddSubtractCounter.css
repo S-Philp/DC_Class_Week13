@@ -1,0 +1,22 @@
+.box2 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(107, 248, 107);
+    margin: 40px;
+    padding: 20px;
+    align-items: center;
+    color: white;
+    width: 500px;
+}
+
+.IncrementButton {
+    width: 200px;
+}
+
+.DecrementButton {
+    width: 200px;
+}
+
+.textBox {
+    margin: 10px;
+}

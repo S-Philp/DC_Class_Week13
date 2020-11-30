@@ -1,24 +1,19 @@
-import logo from './logo.svg';
+import AddSubtractCounter from './components/AddSubtractCounter';
 import './App.css';
+import IncrementDecrementCounter from './components/IncrementDecrementCounter'
+import DisplayCounter from './components/DisplayCounter';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <h1 className='appHeading'>App</h1>
+      <div className='App2'>
+        <IncrementDecrementCounter />
+        <AddSubtractCounter />
+      </div>
+      <DisplayCounter />
     </div>
+
   );
 }
 
