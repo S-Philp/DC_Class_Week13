@@ -6,6 +6,8 @@
     padding: 20px;
     align-items: center;
     color: white;
-    width: 500px;
-    margin-bottom: 40px;
+    width: 25%;
+    height: 200px;
+    justify-content: center;
+    align-content: center;
 }

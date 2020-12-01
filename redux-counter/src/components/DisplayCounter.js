@@ -1,14 +1,21 @@
 import React from 'react';
-// import { connect } from 'react-redux';
+import { connect } from 'react-redux';
 import './DisplayCounter.css';
 
 
 function DisplayCounter(props) {
     return (
         <div className="box3">
-            <h1>DisplayCounter</h1>
+            <h2>DisplayCounter</h2>
+            <h2>{props.ctr}</h2>
         </div>
     )
 }
 
-export default DisplayCounter
+const mapStateToProps = (state) => {
+    return {
+        ctr: state.counter
+    }
+}
+
+export default connect(mapStateToProps)(DisplayCounter)
